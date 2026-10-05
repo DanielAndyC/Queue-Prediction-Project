@@ -1,0 +1,271 @@
+weekday,hour,building,num_classes
+Monday,11,CYM Phys,2
+Monday,11,Runme Shaw,1
+Monday,11,Run Run Shaw,0
+Monday,11,KK Leung,4
+Monday,11,James Hsioung Lee,2
+Monday,11,Knowles,0
+Monday,11,CYM Chem,2
+Monday,11,Meng Wah Complex,8
+Monday,11,Rayson Huang Theatre,3
+Monday,12,CYM Phys,2
+Monday,12,Runme Shaw,1
+Monday,12,Run Run Shaw,0
+Monday,12,KK Leung,12
+Monday,12,James Hsioung Lee,0
+Monday,12,Knowles,5
+Monday,12,CYM Chem,0
+Monday,12,Meng Wah Complex,8
+Monday,12,Rayson Huang Theatre,0
+Monday,13,CYM Phys,4
+Monday,13,Runme Shaw,0
+Monday,13,Run Run Shaw,0
+Monday,13,KK Leung,7
+Monday,13,James Hsioung Lee,2
+Monday,13,Knowles,7
+Monday,13,CYM Chem,1
+Monday,13,Meng Wah Complex,6
+Monday,13,Rayson Huang Theatre,1
+Monday,17,CYM Phys,0
+Monday,17,Runme Shaw,5
+Monday,17,Run Run Shaw,0
+Monday,17,KK Leung,2
+Monday,17,James Hsioung Lee,2
+Monday,17,Knowles,2
+Monday,17,CYM Chem,0
+Monday,17,Meng Wah Complex,9
+Monday,17,Rayson Huang Theatre,0
+Monday,18,CYM Phys,3
+Monday,18,Runme Shaw,0
+Monday,18,Run Run Shaw,0
+Monday,18,KK Leung,11
+Monday,18,James Hsioung Lee,0
+Monday,18,Knowles,5
+Monday,18,CYM Chem,1
+Monday,18,Meng Wah Complex,5
+Monday,18,Rayson Huang Theatre,0
+Monday,19,CYM Phys,0
+Monday,19,Runme Shaw,0
+Monday,19,Run Run Shaw,0
+Monday,19,KK Leung,5
+Monday,19,James Hsioung Lee,0
+Monday,19,Knowles,1
+Monday,19,CYM Chem,0
+Monday,19,Meng Wah Complex,4
+Monday,19,Rayson Huang Theatre,0
+Tuesday,11,CYM Phys,0
+Tuesday,11,Runme Shaw,0
+Tuesday,11,Run Run Shaw,0
+Tuesday,11,KK Leung,2
+Tuesday,11,James Hsioung Lee,0
+Tuesday,11,Knowles,1
+Tuesday,11,CYM Chem,0
+Tuesday,11,Meng Wah Complex,0
+Tuesday,11,Rayson Huang Theatre,0
+Tuesday,12,CYM Phys,4
+Tuesday,12,Runme Shaw,3
+Tuesday,12,Run Run Shaw,2
+Tuesday,12,KK Leung,12
+Tuesday,12,James Hsioung Lee,1
+Tuesday,12,Knowles,4
+Tuesday,12,CYM Chem,0
+Tuesday,12,Meng Wah Complex,22
+Tuesday,12,Rayson Huang Theatre,1
+Tuesday,13,CYM Phys,4
+Tuesday,13,Runme Shaw,3
+Tuesday,13,Run Run Shaw,0
+Tuesday,13,KK Leung,12
+Tuesday,13,James Hsioung Lee,0
+Tuesday,13,Knowles,4
+Tuesday,13,CYM Chem,10
+Tuesday,13,Meng Wah Complex,5
+Tuesday,13,Rayson Huang Theatre,0
+Tuesday,17,CYM Phys,1
+Tuesday,17,Runme Shaw,2
+Tuesday,17,Run Run Shaw,0
+Tuesday,17,KK Leung,13
+Tuesday,17,James Hsioung Lee,1
+Tuesday,17,Knowles,3
+Tuesday,17,CYM Chem,1
+Tuesday,17,Meng Wah Complex,8
+Tuesday,17,Rayson Huang Theatre,0
+Tuesday,18,CYM Phys,0
+Tuesday,18,Runme Shaw,0
+Tuesday,18,Run Run Shaw,0
+Tuesday,18,KK Leung,3
+Tuesday,18,James Hsioung Lee,1
+Tuesday,18,Knowles,3
+Tuesday,18,CYM Chem,2
+Tuesday,18,Meng Wah Complex,2
+Tuesday,18,Rayson Huang Theatre,0
+Tuesday,19,CYM Phys,3
+Tuesday,19,Runme Shaw,0
+Tuesday,19,Run Run Shaw,0
+Tuesday,19,KK Leung,10
+Tuesday,19,James Hsioung Lee,1
+Tuesday,19,Knowles,0
+Tuesday,19,CYM Chem,0
+Tuesday,19,Meng Wah Complex,4
+Tuesday,19,Rayson Huang Theatre,0
+Wednesday,11,CYM Phys,1
+Wednesday,11,Runme Shaw,0
+Wednesday,11,Run Run Shaw,0
+Wednesday,11,KK Leung,5
+Wednesday,11,James Hsioung Lee,0
+Wednesday,11,Knowles,1
+Wednesday,11,CYM Chem,0
+Wednesday,11,Meng Wah Complex,2
+Wednesday,11,Rayson Huang Theatre,2
+Wednesday,12,CYM Phys,1
+Wednesday,12,Runme Shaw,3
+Wednesday,12,Run Run Shaw,0
+Wednesday,12,KK Leung,13
+Wednesday,12,James Hsioung Lee,2
+Wednesday,12,Knowles,0
+Wednesday,12,CYM Chem,0
+Wednesday,12,Meng Wah Complex,8
+Wednesday,12,Rayson Huang Theatre,0
+Wednesday,13,CYM Phys,5
+Wednesday,13,Runme Shaw,1
+Wednesday,13,Run Run Shaw,0
+Wednesday,13,KK Leung,9
+Wednesday,13,James Hsioung Lee,1
+Wednesday,13,Knowles,31
+Wednesday,13,CYM Chem,2
+Wednesday,13,Meng Wah Complex,8
+Wednesday,13,Rayson Huang Theatre,1
+Wednesday,17,CYM Phys,7
+Wednesday,17,Runme Shaw,2
+Wednesday,17,Run Run Shaw,0
+Wednesday,17,KK Leung,12
+Wednesday,17,James Hsioung Lee,0
+Wednesday,17,Knowles,4
+Wednesday,17,CYM Chem,2
+Wednesday,17,Meng Wah Complex,21
+Wednesday,17,Rayson Huang Theatre,0
+Wednesday,18,CYM Phys,2
+Wednesday,18,Runme Shaw,0
+Wednesday,18,Run Run Shaw,0
+Wednesday,18,KK Leung,3
+Wednesday,18,James Hsioung Lee,1
+Wednesday,18,Knowles,4
+Wednesday,18,CYM Chem,2
+Wednesday,18,Meng Wah Complex,1
+Wednesday,18,Rayson Huang Theatre,0
+Wednesday,19,CYM Phys,6
+Wednesday,19,Runme Shaw,0
+Wednesday,19,Run Run Shaw,0
+Wednesday,19,KK Leung,6
+Wednesday,19,James Hsioung Lee,0
+Wednesday,19,Knowles,2
+Wednesday,19,CYM Chem,2
+Wednesday,19,Meng Wah Complex,10
+Wednesday,19,Rayson Huang Theatre,0
+Thursday,11,CYM Phys,1
+Thursday,11,Runme Shaw,0
+Thursday,11,Run Run Shaw,2
+Thursday,11,KK Leung,3
+Thursday,11,James Hsioung Lee,0
+Thursday,11,Knowles,1
+Thursday,11,CYM Chem,0
+Thursday,11,Meng Wah Complex,2
+Thursday,11,Rayson Huang Theatre,0
+Thursday,12,CYM Phys,3
+Thursday,12,Runme Shaw,3
+Thursday,12,Run Run Shaw,2
+Thursday,12,KK Leung,14
+Thursday,12,James Hsioung Lee,1
+Thursday,12,Knowles,6
+Thursday,12,CYM Chem,0
+Thursday,12,Meng Wah Complex,16
+Thursday,12,Rayson Huang Theatre,0
+Thursday,13,CYM Phys,5
+Thursday,13,Runme Shaw,1
+Thursday,13,Run Run Shaw,0
+Thursday,13,KK Leung,5
+Thursday,13,James Hsioung Lee,1
+Thursday,13,Knowles,8
+Thursday,13,CYM Chem,2
+Thursday,13,Meng Wah Complex,10
+Thursday,13,Rayson Huang Theatre,0
+Thursday,17,CYM Phys,1
+Thursday,17,Runme Shaw,3
+Thursday,17,Run Run Shaw,0
+Thursday,17,KK Leung,12
+Thursday,17,James Hsioung Lee,0
+Thursday,17,Knowles,1
+Thursday,17,CYM Chem,0
+Thursday,17,Meng Wah Complex,4
+Thursday,17,Rayson Huang Theatre,0
+Thursday,18,CYM Phys,2
+Thursday,18,Runme Shaw,1
+Thursday,18,Run Run Shaw,0
+Thursday,18,KK Leung,4
+Thursday,18,James Hsioung Lee,1
+Thursday,18,Knowles,7
+Thursday,18,CYM Chem,3
+Thursday,18,Meng Wah Complex,4
+Thursday,18,Rayson Huang Theatre,0
+Thursday,19,CYM Phys,3
+Thursday,19,Runme Shaw,0
+Thursday,19,Run Run Shaw,0
+Thursday,19,KK Leung,7
+Thursday,19,James Hsioung Lee,0
+Thursday,19,Knowles,1
+Thursday,19,CYM Chem,0
+Thursday,19,Meng Wah Complex,6
+Thursday,19,Rayson Huang Theatre,0
+Friday,11,CYM Phys,2
+Friday,11,Runme Shaw,0
+Friday,11,Run Run Shaw,2
+Friday,11,KK Leung,3
+Friday,11,James Hsioung Lee,1
+Friday,11,Knowles,0
+Friday,11,CYM Chem,3
+Friday,11,Meng Wah Complex,4
+Friday,11,Rayson Huang Theatre,0
+Friday,12,CYM Phys,3
+Friday,12,Runme Shaw,2
+Friday,12,Run Run Shaw,0
+Friday,12,KK Leung,10
+Friday,12,James Hsioung Lee,2
+Friday,12,Knowles,5
+Friday,12,CYM Chem,0
+Friday,12,Meng Wah Complex,11
+Friday,12,Rayson Huang Theatre,0
+Friday,13,CYM Phys,1
+Friday,13,Runme Shaw,1
+Friday,13,Run Run Shaw,0
+Friday,13,KK Leung,7
+Friday,13,James Hsioung Lee,1
+Friday,13,Knowles,2
+Friday,13,CYM Chem,7
+Friday,13,Meng Wah Complex,9
+Friday,13,Rayson Huang Theatre,0
+Friday,17,CYM Phys,1
+Friday,17,Runme Shaw,3
+Friday,17,Run Run Shaw,0
+Friday,17,KK Leung,6
+Friday,17,James Hsioung Lee,2
+Friday,17,Knowles,27
+Friday,17,CYM Chem,0
+Friday,17,Meng Wah Complex,9
+Friday,17,Rayson Huang Theatre,0
+Friday,18,CYM Phys,3
+Friday,18,Runme Shaw,0
+Friday,18,Run Run Shaw,0
+Friday,18,KK Leung,4
+Friday,18,James Hsioung Lee,2
+Friday,18,Knowles,3
+Friday,18,CYM Chem,2
+Friday,18,Meng Wah Complex,10
+Friday,18,Rayson Huang Theatre,0
+Friday,19,CYM Phys,1
+Friday,19,Runme Shaw,0
+Friday,19,Run Run Shaw,2
+Friday,19,KK Leung,7
+Friday,19,James Hsioung Lee,0
+Friday,19,Knowles,0
+Friday,19,CYM Chem,2
+Friday,19,Meng Wah Complex,2
+Friday,19,Rayson Huang Theatre,0

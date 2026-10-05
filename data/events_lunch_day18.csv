@@ -1,0 +1,365 @@
+student_id,arrival_minute,building,class_size,walking_time,kiosk_wait,counter_name,counter_wait,total_time
+32,0,Meng Wah Complex,110,1.0,0,Supreme_BBQ,0.0,3.986
+2,2.132,Run Run Shaw,20,3.0,0.0,China_Kitchen,0.0,2.624
+10,4.127,Run Run Shaw,90,3.0,0.0,Gourmet_Kitchen,0.0,5.181
+6,8.075,Run Run Shaw,90,3.0,0.0,China_Kitchen,0.0,1.675
+24,5.93,KK Leung,66,4.0,0.0,Gourmet_Kitchen,0.0,5.867
+33,11.567,Meng Wah Complex,110,1.0,0.0,Supreme_BBQ,0.0,4.026
+36,13.268,Meng Wah Complex,110,1.0,0.0,Gourmet_Kitchen,0.0,5.076
+0,16.971,CYM Phys,59,1.0,0.0,Gourmet_Kitchen,0.181,3.085
+16,16.201,KK Leung,9,4.0,0.0,Supreme_BBQ,0.0,4.142
+28,16.587,KK Leung,66,4.0,0.0,Gourmet_Kitchen,0.0,5.114
+9,17.178,Run Run Shaw,90,3.0,0.0,Gourmet_Kitchen,0.0,5.276
+17,16.577,KK Leung,9,4.0,0.0,Gourmet_Kitchen,1.513,7.179
+42,20.928,Meng Wah Complex,64,1.0,0.0,Noodle_Spot,0.0,3.459
+8,18.95,Run Run Shaw,90,3.0,0.0,Noodle_Spot,0.0,5.593
+15,21.631,Run Run Shaw,90,3.0,0.0,Supreme_BBQ,0.0,3.402
+43,17.244,Meng Wah Complex,64,1.0,0.0,Gourmet_Kitchen,3.08,8.21
+18,18.313,KK Leung,25,4.0,0.0,Gourmet_Kitchen,3.175,7.527
+7,23.061,Run Run Shaw,90,3.0,0.0,Noodle_Spot,0.0,3.01
+26,22.439,KK Leung,66,4.0,0.0,Supreme_BBQ,0.0,3.856
+22,22.415,KK Leung,25,4.0,0.0,China_Kitchen,0.0,4.124
+1,23.878,CYM Phys,59,1.0,0.0,China_Kitchen,0.0,2.792
+29,23.482,Knowles,17,4.0,0.0,Gourmet_Kitchen,0.0,5.461
+27,24.356,KK Leung,66,4.0,0.0,Supreme_BBQ,0.0,5.437
+39,22.571,Meng Wah Complex,110,1.0,0.0,Gourmet_Kitchen,0.674,7.341
+40,27.399,Meng Wah Complex,110,1.0,0.0,China_Kitchen,0.0,2.829
+21,27.239,KK Leung,25,4.0,0.0,Noodle_Spot,0.0,3.107
+38,25.865,Meng Wah Complex,110,1.0,0.0,Supreme_BBQ,0.0,4.611
+20,25.608,KK Leung,25,4.0,0.0,Gourmet_Kitchen,0.0,4.878
+34,26.601,Meng Wah Complex,110,1.0,0.0,Supreme_BBQ,0.0,5.039
+23,26.879,KK Leung,66,4.0,0.0,Gourmet_Kitchen,0.037,4.853
+13,27.433,Run Run Shaw,90,3.0,0.0,Gourmet_Kitchen,0.951,6.504
+41,31.792,Meng Wah Complex,64,1.0,0.0,Noodle_Spot,0.0,3.535
+3,28.117,Run Run Shaw,20,3.0,0.0,Gourmet_Kitchen,1.049,7.502
+4,29.401,Run Run Shaw,20,3.0,0.0,Gourmet_Kitchen,2.006,7.207
+25,32.55,KK Leung,66,4.0,0.0,Noodle_Spot,0.0,4.146
+12,30.242,Run Run Shaw,90,3.0,0.0,Gourmet_Kitchen,1.386,6.552
+14,33.132,Run Run Shaw,90,3.0,0.0,Supreme_BBQ,0.0,4.131
+19,34.911,KK Leung,25,4.0,0.0,Noodle_Spot,0.0,2.921
+37,32.103,Meng Wah Complex,110,1.0,0.0,Gourmet_Kitchen,2.241,5.758
+35,36.405,Meng Wah Complex,110,1.0,0.0,Supreme_BBQ,0.0,4.999
+5,37.053,Run Run Shaw,90,3.0,0.0,Gourmet_Kitchen,0.0,4.392
+30,38.757,Knowles,17,4.0,0.0,Gourmet_Kitchen,0.0,5.945
+11,45.946,Run Run Shaw,90,3.0,0.0,Gourmet_Kitchen,0.0,5.649
+31,47.123,Knowles,17,4.0,0.0,Supreme_BBQ,0.0,5.572
+192,53.737,Meng Wah Complex,33,1.0,0.0,Supreme_BBQ,0.0,4.48
+108,58.505,KK Leung,43,4.0,0.0,Gourmet_Kitchen,0.0,4.574
+70,59.755,Run Run Shaw,25,3.0,0.0,Supreme_BBQ,0.0,5.487
+59,61.162,CYM Phys,72,1.0,0.0,Gourmet_Kitchen,0.0,5.731
+159,63.806,Knowles,56,4.0,0.0,Noodle_Spot,0.0,3.714
+225,63.911,Meng Wah Complex,17,1.0,0.0,Gourmet_Kitchen,0.0,4.422
+221,62.353,Meng Wah Complex,62,1.0,0.0,Supreme_BBQ,0.0,6.229
+195,64.211,Meng Wah Complex,47,1.0,0.0,Gourmet_Kitchen,0.0,4.408
+181,64.412,Meng Wah Complex,50,1.0,0.0,Noodle_Spot,0.0,4.417
+233,67.036,Meng Wah Complex,74,1.0,0.0,Gourmet_Kitchen,0.66,1.883
+125,65.196,KK Leung,61,4.0,0.141,Noodle_Spot,0.0,3.856
+193,66.22,Meng Wah Complex,33,1.0,0.079,China_Kitchen,0.0,3.227
+104,65.515,KK Leung,32,4.0,0.583,Supreme_BBQ,0.0,4.106
+185,64.56,Meng Wah Complex,81,1.0,0.0,Supreme_BBQ,0.0,5.567
+163,64.236,Knowles,104,4.0,0.0,Gourmet_Kitchen,0.737,6.889
+53,68.593,CYM Phys,72,1.0,0.0,Noodle_Spot,0.0,2.58
+194,65.828,Meng Wah Complex,47,1.0,0.328,Supreme_BBQ,0.727,5.909
+216,65.315,Meng Wah Complex,40,1.0,0.716,Gourmet_Kitchen,1.484,6.905
+44,67.097,CYM Phys,29,1.0,0.0,Gourmet_Kitchen,0.344,5.352
+65,67.508,Runme Shaw,33,2.0,0.127,Supreme_BBQ,1.171,5.062
+100,69.37,KK Leung,19,4.0,0.229,China_Kitchen,0.0,3.246
+46,70.656,CYM Phys,29,1.0,0.0,China_Kitchen,0.0,2.058
+196,68.698,Meng Wah Complex,47,1.0,0.0,Noodle_Spot,0.0,4.135
+115,67.22,KK Leung,25,4.0,0.0,Supreme_BBQ,1.409,5.756
+72,69.544,Run Run Shaw,25,3.0,0.087,Noodle_Spot,0.0,3.504
+232,70.836,Meng Wah Complex,74,1.0,0.0,China_Kitchen,0.0,3.107
+152,71.381,Knowles,97,4.0,0.0,Supreme_BBQ,0.0,3.377
+235,67.821,Meng Wah Complex,57,1.0,0.138,Gourmet_Kitchen,1.526,7.02
+220,67.592,Meng Wah Complex,62,1.0,0.262,Gourmet_Kitchen,2.59,7.319
+154,71.166,Knowles,97,4.0,0.0,Supreme_BBQ,0.0,3.944
+123,71.844,KK Leung,61,4.0,0.0,Noodle_Spot,0.0,3.622
+130,74.13,KK Leung,91,4.0,0.167,Noodle_Spot,0.0,2.192
+110,68.438,KK Leung,43,4.0,0.0,Gourmet_Kitchen,1.723,8.343
+50,72.321,CYM Phys,72,1.0,0.0,China_Kitchen,0.0,4.53
+143,74.828,Knowles,28,4.0,0.106,China_Kitchen,0.0,2.179
+238,73.047,Meng Wah Complex,57,1.0,0.379,Supreme_BBQ,0.462,4.125
+58,72.97,CYM Phys,72,1.0,0.0,Supreme_BBQ,0.0,4.425
+188,72.668,Meng Wah Complex,68,1.0,0.0,Gourmet_Kitchen,0.107,4.771
+210,72.566,Meng Wah Complex,94,1.0,0.0,Supreme_BBQ,0.288,5.587
+243,73.319,Meng Wah Complex,21,1.0,0.263,Noodle_Spot,0.0,5.15
+209,68.768,Meng Wah Complex,94,1.0,0.188,Gourmet_Kitchen,3.773,10.476
+144,75.043,Knowles,28,4.0,0.9,China_Kitchen,0.0,5.374
+57,75.65,CYM Phys,72,1.0,1.552,Noodle_Spot,0.0,4.912
+211,74.097,Meng Wah Complex,94,1.0,0.0,Gourmet_Kitchen,1.01,6.786
+179,75.151,Meng Wah Complex,50,1.0,1.42,Supreme_BBQ,0.951,5.839
+203,74.472,Meng Wah Complex,94,1.0,0.35,Supreme_BBQ,0.748,6.636
+106,75.958,KK Leung,35,4.0,1.334,Noodle_Spot,0.0,5.165
+201,77.039,Meng Wah Complex,94,1.0,2.101,Noodle_Spot,0.0,5.041
+94,74.183,KK Leung,18,4.0,0.125,Gourmet_Kitchen,2.468,7.979
+231,75.021,Meng Wah Complex,74,1.0,0.75,Gourmet_Kitchen,0.881,7.191
+140,74.417,James Hsioung Lee,35,4.0,0.388,Supreme_BBQ,0.601,8.026
+68,78.022,Runme Shaw,33,2.0,2.676,Noodle_Spot,0.0,5.352
+166,75.55,Knowles,104,4.0,1.226,Supreme_BBQ,3.039,8.576
+60,78.462,Runme Shaw,36,2.0,3.376,Noodle_Spot,0.0,6.021
+183,75.339,Meng Wah Complex,50,1.0,1.309,Supreme_BBQ,2.706,9.407
+222,74.944,Meng Wah Complex,62,1.0,0.518,Gourmet_Kitchen,3.592,9.945
+167,76.396,Knowles,104,4.0,1.224,Gourmet_Kitchen,2.805,8.508
+190,77.019,Meng Wah Complex,68,1.0,1.693,Gourmet_Kitchen,0.374,8.091
+109,78.141,KK Leung,43,4.0,2.641,Noodle_Spot,0.0,6.995
+228,75.09,Meng Wah Complex,74,1.0,1.468,Supreme_BBQ,3.303,10.839
+129,79.064,KK Leung,91,4.0,4.358,Noodle_Spot,0.0,7.665
+87,76.397,KK Leung,58,4.0,1.554,Supreme_BBQ,4.358,10.795
+73,78.532,Run Run Shaw,66,3.0,3.728,Gourmet_Kitchen,1.17,8.956
+239,80.08,Meng Wah Complex,57,1.0,5.504,Noodle_Spot,0.0,7.927
+236,76.443,Meng Wah Complex,57,1.0,1.959,Supreme_BBQ,5.455,12.306
+172,78.214,Knowles,104,4.0,3.181,Gourmet_Kitchen,1.8,10.681
+75,77.149,Run Run Shaw,66,3.0,2.207,Supreme_BBQ,4.41,11.955
+77,78.875,Run Run Shaw,66,3.0,3.897,Gourmet_Kitchen,0.0,10.641
+49,79.113,CYM Phys,72,1.0,5.013,Gourmet_Kitchen,1.904,10.754
+96,80.061,KK Leung,62,4.0,5.132,Noodle_Spot,0.0,10.054
+175,77.735,Knowles,104,4.0,2.74,Supreme_BBQ,7.71,12.585
+112,76.734,KK Leung,23,4.0,1.72,Supreme_BBQ,6.494,13.669
+162,81.775,Knowles,54,4.0,7.452,China_Kitchen,0.0,9.406
+89,80.109,KK Leung,58,4.0,5.728,Noodle_Spot,0.0,11.459
+97,79.109,KK Leung,62,4.0,4.477,Gourmet_Kitchen,3.058,12.662
+178,77.39,Meng Wah Complex,50,1.0,2.379,Supreme_BBQ,7.967,14.537
+191,80.64,Meng Wah Complex,33,1.0,6.697,Noodle_Spot,0.0,11.288
+150,77.876,Knowles,97,4.0,2.694,Supreme_BBQ,7.656,14.726
+217,80.921,Meng Wah Complex,62,1.0,6.423,China_Kitchen,0.0,11.695
+224,83.254,Meng Wah Complex,62,1.0,6.706,Noodle_Spot,0.0,9.678
+99,82.027,KK Leung,19,4.0,7.24,Noodle_Spot,0.0,11.092
+126,79.113,KK Leung,61,4.0,4.62,Gourmet_Kitchen,3.606,14.387
+206,77.593,Meng Wah Complex,94,1.0,2.743,Supreme_BBQ,7.781,16.012
+64,80.513,Runme Shaw,36,2.0,5.898,Gourmet_Kitchen,2.523,13.595
+223,83.701,Meng Wah Complex,62,1.0,7.571,China_Kitchen,0.0,10.501
+141,78.59,Knowles,28,4.0,4.157,Supreme_BBQ,8.504,15.929
+229,82.734,Meng Wah Complex,74,1.0,6.919,Noodle_Spot,0.0,11.829
+80,83.828,KK Leung,39,4.0,8.005,China_Kitchen,0.0,11.144
+105,78.576,KK Leung,32,4.0,3.962,Supreme_BBQ,9.017,16.809
+86,79.801,KK Leung,58,4.0,5.371,Gourmet_Kitchen,4.423,16.232
+66,83.821,Runme Shaw,33,2.0,7.511,Noodle_Spot,0.201,12.274
+219,84.098,Meng Wah Complex,62,1.0,7.768,China_Kitchen,0.0,12.272
+79,80.208,KK Leung,39,4.0,5.672,Gourmet_Kitchen,6.064,16.754
+47,78.939,CYM Phys,18,1.0,4.1,Supreme_BBQ,9.479,18.333
+52,80.966,CYM Phys,72,1.0,6.381,Gourmet_Kitchen,5.407,16.822
+212,79.026,Meng Wah Complex,54,1.0,4.064,Supreme_BBQ,9.326,18.896
+242,79.158,Meng Wah Complex,14,1.0,5.477,Supreme_BBQ,9.505,18.932
+200,86.422,Meng Wah Complex,14,1.0,8.13,Noodle_Spot,0.0,12.18
+127,82.887,KK Leung,61,4.0,6.911,Gourmet_Kitchen,5.129,16.603
+234,81.047,Meng Wah Complex,74,1.0,6.389,Gourmet_Kitchen,6.636,19.589
+107,90.807,KK Leung,35,4.0,7.613,China_Kitchen,0.0,10.251
+171,91.231,Knowles,104,4.0,7.649,Noodle_Spot,0.0,10.213
+180,81.306,Meng Wah Complex,50,1.0,6.414,Supreme_BBQ,8.292,20.43
+151,80.295,Knowles,97,4.0,5.615,Supreme_BBQ,10.861,21.571
+215,91.643,Meng Wah Complex,54,1.0,7.328,Noodle_Spot,0.0,10.315
+63,81.414,Runme Shaw,36,2.0,6.6,Supreme_BBQ,8.655,20.969
+208,93.69,Meng Wah Complex,94,1.0,6.605,Noodle_Spot,0.107,9.068
+241,83.44,Meng Wah Complex,57,1.0,7.204,Gourmet_Kitchen,5.753,19.475
+69,93.866,Runme Shaw,33,2.0,6.514,Noodle_Spot,0.0,9.155
+155,84.785,Knowles,97,4.0,7.76,Gourmet_Kitchen,7.771,19.081
+74,84.463,Run Run Shaw,66,3.0,7.571,Supreme_BBQ,9.306,19.503
+184,81.447,Meng Wah Complex,81,1.0,7.255,Supreme_BBQ,11.776,22.775
+147,90.981,Knowles,97,4.0,7.805,Noodle_Spot,0.0,13.372
+128,92.285,KK Leung,91,4.0,7.095,China_Kitchen,0.0,12.273
+56,84.367,CYM Phys,72,1.0,7.574,Gourmet_Kitchen,6.945,20.279
+48,97.132,CYM Phys,18,1.0,4.857,China_Kitchen,0.0,7.599
+240,82.579,Meng Wah Complex,57,1.0,6.818,Supreme_BBQ,10.534,22.373
+81,86.142,KK Leung,39,4.0,7.934,Supreme_BBQ,8.23,19.404
+51,84.742,CYM Phys,72,1.0,7.762,Gourmet_Kitchen,9.584,22.003
+156,84.879,Knowles,34,4.0,7.852,Gourmet_Kitchen,10.1,22.759
+54,85.77,CYM Phys,72,1.0,7.562,Gourmet_Kitchen,9.45,22.123
+98,87.007,KK Leung,62,4.0,8.634,Supreme_BBQ,7.882,20.958
+111,85.266,KK Leung,23,4.0,7.6,Supreme_BBQ,8.552,23.067
+92,101.022,KK Leung,58,4.0,2.644,Noodle_Spot,0.0,7.444
+182,86.83,Meng Wah Complex,50,1.0,8.584,Supreme_BBQ,7.921,22.588
+246,85.35,Meng Wah Complex,21,1.0,7.726,Gourmet_Kitchen,12.192,24.366
+186,89.837,Meng Wah Complex,68,1.0,7.789,Supreme_BBQ,9.547,20.202
+101,89.226,KK Leung,19,4.0,7.844,Supreme_BBQ,10.538,21.395
+218,85.96,Meng Wah Complex,62,1.0,7.997,Gourmet_Kitchen,12.945,25.371
+139,86.312,James Hsioung Lee,35,4.0,8.105,Gourmet_Kitchen,12.252,25.458
+205,88.247,Meng Wah Complex,94,1.0,8.117,Supreme_BBQ,10.065,23.837
+61,86.737,Runme Shaw,36,2.0,7.957,Gourmet_Kitchen,13.628,26.14
+164,90.404,Knowles,104,4.0,7.496,Supreme_BBQ,11.677,23.075
+95,86.356,KK Leung,62,4.0,8.189,Gourmet_Kitchen,14.967,27.785
+132,89.58,KK Leung,91,4.0,7.881,Supreme_BBQ,11.12,24.595
+67,89.443,Runme Shaw,33,2.0,7.804,Supreme_BBQ,13.113,25.741
+146,87.418,Knowles,28,4.0,8.67,Gourmet_Kitchen,14.659,28.103
+83,91.331,KK Leung,39,4.0,7.588,Supreme_BBQ,13.183,24.51
+177,88.16,Knowles,104,4.0,8.165,Gourmet_Kitchen,15.63,28.656
+237,91.453,Meng Wah Complex,57,1.0,7.491,Supreme_BBQ,12.797,26.513
+134,95.061,KK Leung,91,4.0,6.106,Supreme_BBQ,13.726,23.023
+113,87.243,KK Leung,25,4.0,8.749,Gourmet_Kitchen,16.68,30.923
+88,89.313,KK Leung,58,4.0,7.798,Gourmet_Kitchen,17.101,28.971
+157,94.821,Knowles,56,4.0,6.024,Supreme_BBQ,13.852,23.489
+230,93.07,Meng Wah Complex,74,1.0,7.191,Gourmet_Kitchen,14.831,27.262
+118,95.367,KK Leung,95,4.0,6.091,Supreme_BBQ,14.615,25.031
+116,115.271,KK Leung,25,4.0,0.0,China_Kitchen,0.0,5.144
+170,95.912,Knowles,104,4.0,6.073,Supreme_BBQ,14.643,24.542
+202,95.608,Meng Wah Complex,94,1.0,6.072,Supreme_BBQ,14.874,25.218
+199,95.672,Meng Wah Complex,14,1.0,6.179,Gourmet_Kitchen,14.751,25.658
+91,95.084,KK Leung,58,4.0,6.295,Gourmet_Kitchen,15.411,26.781
+145,98.114,Knowles,28,4.0,4.868,Gourmet_Kitchen,16.46,24.896
+136,99.065,KK Leung,91,4.0,4.468,Supreme_BBQ,15.729,24.311
+189,98.892,Meng Wah Complex,68,1.0,4.577,Supreme_BBQ,16.008,25.226
+84,101.151,KK Leung,58,4.0,2.721,Gourmet_Kitchen,16.29,23.398
+187,97.707,Meng Wah Complex,68,1.0,5.048,Supreme_BBQ,16.041,26.893
+138,102.802,James Hsioung Lee,35,4.0,1.923,Gourmet_Kitchen,16.915,23.106
+45,102.225,CYM Phys,29,1.0,2.131,Gourmet_Kitchen,15.979,23.996
+121,98.388,KK Leung,61,4.0,4.704,Supreme_BBQ,18.436,28.038
+133,105.056,KK Leung,91,4.0,0.0,Supreme_BBQ,18.065,21.395
+114,104.761,KK Leung,25,4.0,0.179,Supreme_BBQ,18.496,22.362
+122,102.843,KK Leung,61,4.0,1.975,Gourmet_Kitchen,17.615,24.856
+214,106.374,Meng Wah Complex,54,1.0,0.0,Supreme_BBQ,18.3,21.888
+369,125.421,Meng Wah Complex,91,1.0,0.0,China_Kitchen,0.0,3.52
+309,117.671,Knowles,23,4.0,0.0,Gourmet_Kitchen,6.623,11.69
+368,122.54,Meng Wah Complex,91,1.0,0.0,Gourmet_Kitchen,3.914,7.114
+102,112.851,KK Leung,19,4.0,0.0,Supreme_BBQ,11.986,16.863
+303,122.547,KK Leung,18,4.0,0.0,Gourmet_Kitchen,2.851,8.151
+297,119.488,KK Leung,87,4.0,0.0,Supreme_BBQ,7.626,11.783
+363,116.853,Meng Wah Complex,42,1.0,0.0,Supreme_BBQ,8.576,15.028
+262,127.517,CYM Phys,126,1.0,0.0,Gourmet_Kitchen,2.6,4.447
+282,126.642,Runme Shaw,106,2.0,0.0,Gourmet_Kitchen,1.892,5.549
+361,123.083,Meng Wah Complex,16,1.0,0.0,Gourmet_Kitchen,4.444,9.371
+389,128.824,Meng Wah Complex,41,1.0,0.0,China_Kitchen,0.0,4.051
+326,131.078,Knowles,56,4.0,0.0,Noodle_Spot,0.0,2.194
+314,121.854,Knowles,87,4.0,0.0,Supreme_BBQ,5.621,11.612
+357,128.813,CYM Chem,78,9.0,0.0,Gourmet_Kitchen,2.324,5.018
+281,125.355,Runme Shaw,106,2.0,0.0,Supreme_BBQ,4.629,9.981
+285,131.317,Runme Shaw,106,2.0,0.0,Noodle_Spot,0.0,4.421
+292,126.858,KK Leung,87,4.0,0.0,Supreme_BBQ,4.576,9.226
+280,128.212,Runme Shaw,106,2.0,0.0,Gourmet_Kitchen,2.387,8.118
+275,125.609,CYM Phys,45,1.0,0.0,Supreme_BBQ,6.081,10.758
+358,133.658,CYM Chem,78,9.0,0.0,China_Kitchen,0.0,2.876
+305,127.463,James Hsioung Lee,22,4.0,0.0,Gourmet_Kitchen,3.677,9.967
+295,132.331,KK Leung,87,4.0,0.0,Gourmet_Kitchen,0.155,5.792
+397,133.986,Meng Wah Complex,21,1.0,0.007,Noodle_Spot,0.0,4.824
+380,127.217,Meng Wah Complex,91,1.0,0.0,Supreme_BBQ,6.957,11.676
+364,132.926,Meng Wah Complex,42,1.0,0.0,Gourmet_Kitchen,2.373,6.413
+252,128.057,CYM Phys,47,1.0,0.0,Supreme_BBQ,6.882,11.364
+269,129.244,CYM Phys,45,1.0,0.0,Supreme_BBQ,6.246,10.256
+403,133.975,Meng Wah Complex,26,1.0,0.0,Gourmet_Kitchen,2.557,6.214
+372,132.669,Meng Wah Complex,91,1.0,0.0,Gourmet_Kitchen,3.329,7.565
+379,135.147,Meng Wah Complex,91,1.0,0.418,Noodle_Spot,0.0,5.211
+384,129.883,Meng Wah Complex,45,1.0,0.0,Supreme_BBQ,8.289,10.485
+362,133.387,Meng Wah Complex,42,1.0,0.0,Supreme_BBQ,5.506,8.095
+249,131.153,CYM Phys,45,1.0,0.0,Supreme_BBQ,6.673,10.761
+375,139.378,Meng Wah Complex,91,1.0,0.372,Noodle_Spot,0.0,3.494
+274,134.004,CYM Phys,45,1.0,0.096,Gourmet_Kitchen,3.75,9.059
+347,133.665,CYM Chem,47,9.0,0.012,Supreme_BBQ,6.257,9.459
+277,138.733,Runme Shaw,106,2.0,0.165,Noodle_Spot,0.0,4.698
+259,135.669,CYM Phys,126,1.0,0.0,Gourmet_Kitchen,2.423,8.059
+366,134.278,Meng Wah Complex,42,1.0,0.0,Supreme_BBQ,5.986,10.693
+251,133.503,CYM Phys,47,1.0,0.0,Supreme_BBQ,5.879,11.642
+360,136.758,Meng Wah Complex,16,1.0,0.266,Gourmet_Kitchen,1.336,8.562
+344,142.006,Knowles,124,4.0,1.24,Noodle_Spot,0.0,3.339
+376,134.507,Meng Wah Complex,91,1.0,0.922,Supreme_BBQ,7.01,10.852
+351,140.46,CYM Chem,78,9.0,0.856,Noodle_Spot,0.0,5.032
+290,135.97,KK Leung,34,4.0,0.0,Supreme_BBQ,8.264,9.885
+328,138.738,Knowles,56,4.0,0.244,Gourmet_Kitchen,3.27,7.42
+383,142.823,Meng Wah Complex,45,1.0,1.992,China_Kitchen,0.0,3.714
+323,139.593,Knowles,42,4.0,0.817,Gourmet_Kitchen,1.292,7.326
+345,140.784,Knowles,124,4.0,0.588,Gourmet_Kitchen,2.748,7.088
+354,134.886,CYM Chem,78,9.0,0.557,Supreme_BBQ,8.336,13.084
+343,136.113,Knowles,124,4.0,0.0,Supreme_BBQ,8.657,12.027
+318,135.551,Knowles,87,4.0,0.037,Supreme_BBQ,8.477,12.891
+373,143.057,Meng Wah Complex,91,1.0,2.88,Noodle_Spot,0.0,5.439
+289,142.41,KK Leung,34,4.0,1.493,Noodle_Spot,0.0,6.564
+294,139.63,KK Leung,87,4.0,1.399,Gourmet_Kitchen,3.438,9.922
+340,143.739,Knowles,124,4.0,2.727,Noodle_Spot,0.435,5.84
+304,143.021,KK Leung,18,4.0,2.815,Noodle_Spot,0.0,6.799
+307,143.104,Knowles,23,4.0,3.093,Noodle_Spot,0.692,7.011
+321,136.663,Knowles,13,4.0,0.218,Supreme_BBQ,9.633,13.981
+265,140.249,CYM Phys,126,1.0,0.917,Gourmet_Kitchen,4.086,10.416
+286,137.574,Runme Shaw,106,2.0,0.0,Supreme_BBQ,9.46,13.691
+371,140.527,Meng Wah Complex,91,1.0,0.834,Gourmet_Kitchen,4.626,10.819
+377,141.946,Meng Wah Complex,91,1.0,0.887,Gourmet_Kitchen,5.668,9.44
+284,145.011,Runme Shaw,106,2.0,4.034,China_Kitchen,0.0,6.426
+367,144.21,Meng Wah Complex,91,1.0,3.04,China_Kitchen,0.0,7.24
+336,136.446,Knowles,124,4.0,0.0,Supreme_BBQ,9.79,15.239
+338,144.668,Knowles,124,4.0,3.871,Noodle_Spot,0.0,7.269
+394,146.754,Meng Wah Complex,51,1.0,4.826,China_Kitchen,0.0,6.059
+385,146.148,Meng Wah Complex,45,1.0,4.679,Noodle_Spot,0.0,7.507
+268,144.826,CYM Phys,126,1.0,4.183,Noodle_Spot,0.0,8.893
+273,145.073,CYM Phys,45,1.0,3.977,Noodle_Spot,0.0,8.922
+346,137.907,Knowles,124,4.0,0.43,Supreme_BBQ,11.037,16.121
+302,138.415,KK Leung,21,4.0,0.0,Supreme_BBQ,11.275,15.627
+382,142.171,Meng Wah Complex,45,1.0,1.713,Gourmet_Kitchen,6.581,12.243
+392,137.76,Meng Wah Complex,51,1.0,0.0,Supreme_BBQ,11.515,17.06
+317,141.727,Knowles,87,4.0,0.845,Gourmet_Kitchen,6.766,13.262
+287,142.042,KK Leung,34,4.0,1.477,Gourmet_Kitchen,5.93,13.297
+247,137.855,CYM Phys,45,1.0,0.0,Supreme_BBQ,12.999,18.381
+248,138.961,CYM Phys,45,1.0,0.647,Supreme_BBQ,12.726,17.518
+296,139.575,KK Leung,87,4.0,0.218,Supreme_BBQ,13.447,17.248
+299,142.88,KK Leung,87,4.0,2.576,Gourmet_Kitchen,8.708,14.468
+334,149.142,Knowles,56,4.0,5.47,Noodle_Spot,0.0,8.801
+278,142.712,Runme Shaw,106,2.0,1.957,Gourmet_Kitchen,8.217,15.657
+260,148.223,CYM Phys,126,1.0,5.28,Noodle_Spot,0.0,10.165
+337,144.055,Knowles,124,4.0,3.12,Gourmet_Kitchen,6.33,14.608
+283,141.631,Runme Shaw,106,2.0,0.805,Supreme_BBQ,12.21,17.235
+288,141.913,KK Leung,34,4.0,0.807,Supreme_BBQ,11.809,17.715
+312,150.253,Knowles,87,4.0,5.906,Noodle_Spot,0.0,9.421
+391,142.585,Meng Wah Complex,51,1.0,1.499,Supreme_BBQ,12.929,17.861
+355,144.54,CYM Chem,78,9.0,3.817,Gourmet_Kitchen,7.43,16.301
+395,142.425,Meng Wah Complex,51,1.0,1.601,Supreme_BBQ,12.008,18.487
+298,143.526,KK Leung,87,4.0,2.755,Supreme_BBQ,13.271,17.715
+291,152.676,KK Leung,87,4.0,4.835,Noodle_Spot,0.0,8.948
+272,146.173,CYM Phys,45,1.0,4.705,Gourmet_Kitchen,6.789,15.657
+396,146.414,Meng Wah Complex,21,1.0,4.521,Gourmet_Kitchen,5.926,15.537
+359,154.173,CYM Chem,78,9.0,4.796,Noodle_Spot,0.0,7.812
+311,153.785,Knowles,87,4.0,5.066,Noodle_Spot,0.0,8.693
+329,142.609,Knowles,56,4.0,1.97,Supreme_BBQ,12.735,20.3
+250,156.373,CYM Phys,47,1.0,4.294,China_Kitchen,0.0,7.656
+335,147.801,Knowles,124,4.0,4.49,Gourmet_Kitchen,8.272,16.747
+332,155.229,Knowles,56,4.0,4.353,China_Kitchen,0.0,9.439
+352,143.757,CYM Chem,78,9.0,3.135,Supreme_BBQ,12.828,21.137
+293,156.753,KK Leung,87,4.0,4.224,China_Kitchen,0.0,8.487
+330,146.868,Knowles,56,4.0,5.125,Gourmet_Kitchen,7.878,18.497
+400,144.496,Meng Wah Complex,29,1.0,3.307,Supreme_BBQ,12.556,20.955
+386,144.581,Meng Wah Complex,41,1.0,3.832,Supreme_BBQ,15.272,20.923
+390,144.388,Meng Wah Complex,41,1.0,3.2,Supreme_BBQ,13.865,21.423
+356,147.801,CYM Chem,78,9.0,4.937,Gourmet_Kitchen,8.009,18.113
+264,158.888,CYM Phys,126,1.0,4.021,China_Kitchen,0.0,7.069
+300,148.622,KK Leung,87,4.0,5.319,Gourmet_Kitchen,10.61,19.198
+306,145.744,James Hsioung Lee,22,4.0,4.174,Supreme_BBQ,14.102,22.099
+276,148.068,Runme Shaw,106,2.0,5.26,Gourmet_Kitchen,10.753,19.857
+313,145.447,Knowles,87,4.0,4.176,Supreme_BBQ,13.819,22.487
+324,146.43,Knowles,42,4.0,4.92,Gourmet_Kitchen,10.398,21.588
+308,164.721,Knowles,23,4.0,0.0,China_Kitchen,0.0,3.388
+263,146.111,CYM Phys,126,1.0,3.988,Supreme_BBQ,14.07,22.216
+402,148.776,Meng Wah Complex,26,1.0,5.187,Gourmet_Kitchen,12.171,22.335
+374,147.553,Meng Wah Complex,91,1.0,4.67,Supreme_BBQ,14.516,23.68
+258,147.849,CYM Phys,126,1.0,5.113,Supreme_BBQ,14.364,24.127
+253,146.648,CYM Phys,47,1.0,4.786,Supreme_BBQ,14.431,25.664
+327,150.164,Knowles,56,4.0,5.485,Gourmet_Kitchen,11.766,22.166
+315,170.338,Knowles,87,4.0,0.0,China_Kitchen,0.0,2.312
+301,151.804,KK Leung,21,4.0,5.371,Gourmet_Kitchen,9.493,21.515
+387,148.984,Meng Wah Complex,41,1.0,5.166,Supreme_BBQ,15.963,24.4
+331,148.566,Knowles,56,4.0,4.991,Supreme_BBQ,16.617,26.211
+341,152.24,Knowles,124,4.0,5.199,Gourmet_Kitchen,12.142,22.642
+319,155.442,Knowles,17,4.0,4.351,Gourmet_Kitchen,11.829,20.26
+393,149.578,Meng Wah Complex,51,1.0,5.726,Supreme_BBQ,15.951,26.746
+257,149.233,CYM Phys,126,1.0,5.968,Supreme_BBQ,16.632,27.936
+256,149.779,CYM Phys,42,1.0,5.58,Supreme_BBQ,17.75,27.457
+279,155.172,Runme Shaw,106,2.0,4.357,Gourmet_Kitchen,12.652,22.347
+399,155.719,Meng Wah Complex,21,1.0,4.344,Gourmet_Kitchen,14.105,22.194
+342,149.543,Knowles,124,4.0,5.727,Supreme_BBQ,19.011,29.74
+381,150.143,Meng Wah Complex,91,1.0,5.418,Supreme_BBQ,19.731,29.476
+333,154.48,Knowles,56,4.0,4.714,Gourmet_Kitchen,14.725,25.479
+349,155.89,CYM Chem,78,9.0,4.611,Gourmet_Kitchen,15.504,24.36
+398,151.141,Meng Wah Complex,21,1.0,5.611,Supreme_BBQ,19.725,30.201
+353,156.477,CYM Chem,78,9.0,4.3,Gourmet_Kitchen,15.816,24.946
+310,150.286,Knowles,23,4.0,6.074,Supreme_BBQ,21.501,31.764
+270,151.884,CYM Phys,45,1.0,5.429,Supreme_BBQ,21.621,30.83
+322,157.576,Knowles,42,4.0,4.521,Gourmet_Kitchen,17.139,26.487
+316,151.795,Knowles,87,4.0,5.232,Supreme_BBQ,22.856,32.659
+339,156.795,Knowles,124,4.0,4.576,Gourmet_Kitchen,17.05,27.734
+271,153.737,CYM Phys,45,1.0,4.26,Supreme_BBQ,22.492,31.419
+378,153.255,Meng Wah Complex,91,1.0,4.527,Supreme_BBQ,23.185,32.739
+370,157.026,Meng Wah Complex,91,1.0,4.989,Gourmet_Kitchen,18.185,29.001
+325,157.444,Knowles,4,4.0,4.625,Gourmet_Kitchen,20.792,29.813
+388,153.776,Meng Wah Complex,41,1.0,4.749,Supreme_BBQ,24.661,33.806
+320,158.288,Knowles,17,4.0,4.03,Gourmet_Kitchen,20.818,29.299
+255,157.346,CYM Phys,42,1.0,4.705,Supreme_BBQ,22.188,30.928
+266,160.875,CYM Phys,126,1.0,2.237,Gourmet_Kitchen,21.661,28.772
+350,166.307,CYM Chem,78,9.0,0.0,Supreme_BBQ,19.496,23.725
+261,162.266,CYM Phys,126,1.0,1.006,Supreme_BBQ,21.368,28.141
+365,166.377,Meng Wah Complex,42,1.0,0.0,Supreme_BBQ,19.065,25.014
+267,168.184,CYM Phys,126,1.0,0.0,Gourmet_Kitchen,20.205,23.481
+401,162.105,Meng Wah Complex,29,1.0,1.133,Gourmet_Kitchen,23.0,30.052
+348,159.458,CYM Chem,47,9.0,3.51,Gourmet_Kitchen,22.67,33.409
