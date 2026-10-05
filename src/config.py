@@ -3,7 +3,6 @@ Shared constants for the Canteen Queue Prediction project.
 
 Two-stage CYM queue model:
   Stage 1: 6 ordering/payment kiosks (single pooled FCFS queue).
-           Drinks are bought at the same kiosk, so no separate station.
   Stage 2: 4 food counters, each with 3 parallel servers:
            Supreme BBQ, China Kitchen, Noodle Spot, Gourmet Kitchen.
 
