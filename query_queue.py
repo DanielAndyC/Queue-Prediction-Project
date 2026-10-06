@@ -23,7 +23,7 @@ def query(df, day, time_str):
         meal = "dinner"
     else:
         print(f"\nTime {time_str} is outside meal windows "
-              f"(lunch 10:30–14:59, dinner 16:30–20:59).")
+              f"(lunch 10:30-14:59, dinner 16:30-20:59).")
         return
 
     mask = (
@@ -99,7 +99,7 @@ def prompt_time():
 
         if 0 <= h <= 23 and 0 <= m <= 59:
             return f"{h:02d}:{m:02d}"
-        print("  Invalid time — hours must be 00–23 and minutes 00–59.")
+        print("  Invalid time — hours must be 00-23 and minutes 00-59.")
 
 
 # ──────────────────────────────────────────────────────────────────
