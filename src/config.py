@@ -22,7 +22,7 @@ QUEUE_RECORD_INTERVAL = 1     # minutes
 
 # ── Stage 1: kiosks (order + pay) ---------──────────────────────
 NUM_KIOSKS = 6
-KIOSK_SERVICE_MEAN = 1.5      # minutes
+KIOSK_SERVICE_MEAN = 1.2      # minutes
 KIOSK_SERVICE_STD  = 0.5
 
 # ── Stage 2: food counters ──────────────────────────────────────
@@ -38,14 +38,14 @@ COUNTER_CAPACITY = 3          # parallel servers per counter
 COUNTER_WEIGHTS_LUNCH = {
     "Supreme_BBQ":     0.40,
     "China_Kitchen":   0.10,
-    "Noodle_Spot":     0.15,
-    "Gourmet_Kitchen": 0.35,
+    "Noodle_Spot":     0.20,
+    "Gourmet_Kitchen": 0.30,
 }
 COUNTER_WEIGHTS_DINNER = {
-    "Supreme_BBQ":     0.45,
-    "China_Kitchen":   0.15,
-    "Noodle_Spot":     0.15,
-    "Gourmet_Kitchen": 0.25,
+    "Supreme_BBQ":     0.15,
+    "China_Kitchen":   0.30,
+    "Noodle_Spot":     0.20,
+    "Gourmet_Kitchen": 0.35,
 }
 
 # Food-serving time per counter (minutes).
@@ -59,7 +59,7 @@ COUNTER_SERVICE_STD = 0.8
 
 # ── Class-size assumptions ──────────────────────────────────────
 CYM_ATTENDANCE_FRACTION = 0.10
-AVG_CLASS_SIZE = 50
+AVG_CLASS_SIZE = 60
 CLASS_SIZE_LOG_STD = 0.8
 
 # ── Balking ─────────────────────────────────────────────────────

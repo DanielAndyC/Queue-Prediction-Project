@@ -198,7 +198,7 @@ def simulate(meal_period, day, weekday, seed=BASE_SEED,
     for class_end_minute, building, class_size, attendees in schedule:
         walk = BUILDINGS[building]["walk"] / walking_speed_factor
         for _ in range(attendees):
-            spread = random.gauss(0, 10.0)
+            spread = random.gauss(0, 5.0)
             arrival_offset = max(0, class_end_minute + walk + spread)
             env.process(student_journey(
                 env, arrival_offset, building, class_size, walk,

@@ -237,7 +237,7 @@ hour (lunch 10:30–14:59, dinner 16:30–20:59). Type `q` at any prompt to quit
 
 Because some data is not publicly available, the project assumes:
 
-- **Average class size:** 50 students (log-normal distribution, log-space SD 0.8).
+- **Average class size:** 60 students (log-normal distribution, log-space SD 0.8).
 - **CYM attendance fraction:** 10% of each class walks to the CYM canteen. The
   number of attendees is drawn from a binomial distribution
   `Binomial(n=class_size, p=0.10)`, so some classes contribute zero students
@@ -251,15 +251,17 @@ Because some data is not publicly available, the project assumes:
   Each class is assigned to its actual building, and the
   walking time is looked up from the `BUILDINGS` table in  `config.py`.
 - **Arrival spread:** each class produces arrivals centred on
-  `class_end + walking_time`, with Gaussian noise (SD 10 minutes) representing
+  `class_end + walking_time`, with Gaussian noise (SD 5 minutes) representing
   students who leave class at different times.
 - **Service times:** Gaussian, with means set to observed values. Kiosk mean
-  1.5 min; China Kitchen 1.5 min; Noodle Spot 2.0 min; Supreme BBQ 3.0 min;
+  1.2 min; China Kitchen 1.5 min; Noodle Spot 2.0 min; Supreme BBQ 3.0 min;
   Gourmet Kitchen 3.5 min.
-- **Counter popularity (lunch):** Supreme BBQ 40%, Gourmet Kitchen 35%,
-  Noodle Spot 15%, China Kitchen 10%.
-- **Counter popularity (dinner):** Supreme BBQ 45%, Gourmet Kitchen 25%,
-  Noodle Spot 15%, China Kitchen 15%.
+- **Counter popularity (lunch):** Supreme BBQ 40%, Gourmet Kitchen 30%,
+  Noodle Spot 20%, China Kitchen 10%.
+- **Counter popularity (dinner):** Gourmet Kitchen 35%, China Kitchen 30%,
+  Noodle Spot 20%, Supreme BBQ 15%. This reflects corrected on-site
+  observations — the earlier assumption that Supreme BBQ dominated dinner
+  was reversed after further observation.
 - **Random seed:** All randomness is controlled by `BASE_SEED` in `config.py`.
   Changing it will produce different queue data, different feature values,
   and slightly different MAE results. The default is 42.
@@ -283,32 +285,32 @@ using the current class counts and calibrated parameters.
 
 | Metric | Value |
 |--------|-------|
-| Mean queue (all) | 12.0 |
-| Lunch mean | 15.4 |
-| Dinner mean | 8.6 |
-| Peak queue | 95 (day 28, Thursday lunch, at 13:03) |
-| Students served per meal | 200–400 |
-| Cross-correlation peak | +18 minutes |
+| Mean queue (all) | 13.6 |
+| Lunch mean | 17.7 |
+| Dinner mean | 9.5 |
+| Peak queue | 139 (day 12, Wednesday lunch, at 13:04) |
+| Students served per meal | 240–430 |
+| Cross-correlation peak | +10 minutes |
 
 ### 7.2 Model performance (Decision Tree, depth 7)
 
 | Experiment | MAE | Baseline MAE | Error reduction |
 |------------|-----|--------------|-----------------|
-| A: Schedule-only, predict current queue | 3.59 | 14.62 | ~75.4% |
-| B: Predict queue 10 minutes ahead | 3.43 | 14.87 | ~76.9% |
-| C: Predict change in queue length | 0.74 | 0.90 | ~18.2% |
-| D: All features (including lag) | 0.80 | 14.62 | ~94.6% |
+| A: Schedule-only, predict current queue | 3.65 | 16.96 | ~78.5% |
+| B: Predict queue 10 minutes ahead | 4.80 | 17.27 | ~72.2% |
+| C: Predict change in queue length | 0.76 | 1.12 | ~32.3% |
+| D: All features (including lag) | 0.85 | 16.96 | ~95.0% |
 
 **Experiment A is the key result.** With no queue history at all, schedule and
-location features alone reduce prediction error by three quarters. This is
+location features alone reduce prediction error by nearly four fifths. This is
 direct evidence that the location-and-time approach works.
 
-**Experiment B is comparable.** Forecasting 10 minutes ahead gives a similar
-MAE (3.43) to predicting the current minute (3.59). The queue memory is long
-enough that future values are predictable from schedule features.
+**Experiment B is slightly weaker.** Forecasting 10 minutes ahead gives a
+higher MAE (4.80) than predicting the current minute (3.65). The future queue
+depends on arrivals that have not happened yet, which makes the task harder.
 
 **Experiment C is positive but modest.** One-minute queue changes are
-dominated by stochastic noise. The depth-7 tree reduces error by 18.2%
+dominated by stochastic noise. The depth-7 tree reduces error by 32.3%
 relative to the mean baseline, showing that even rapid fluctuations carry some
 predictable structure.
 
@@ -322,19 +324,19 @@ isolate the schedule's contribution and show it is substantial.
 
 ### 7.4 Cross-correlation
 
-Strongest positive correlation at lag **+18 minutes** (r = 0.57). The queue
-length responds to arrival bursts over the following 15–20 minutes, consistent
+Strongest positive correlation at lag **+10 minutes** (r = 0.709). The queue
+length responds to arrival bursts over the following 5–15 minutes, consistent
 with the physical lag between class end, walking time, kiosk service, and
-counter accumulation. The wide arrival spread (SD 10 minutes) means the
-effective arrival curve is smoother than a single burst, which pushes the
-cross-correlation peak later than the walking-time-only expectation.
+counter accumulation. The arrival spread (SD 5 minutes) concentrates the
+effective arrival curve enough that the peak response stays close to the
+walking-time expectation.
 
 ### 7.5 Bottleneck identification
 
 The **stage-wait plots** show the mean wait at kiosks vs counters over 30 days:
 
-- Kiosk wait (Stage 1): **1–4 minutes** on most days
-- Counter wait (Stage 2): **5–16 minutes** on most days
+- Kiosk wait (Stage 1): **2–7 minutes** on most days
+- Counter wait (Stage 2): **3–14 minutes** on most days
 
 **The counters are the bottleneck — not the kiosks.**
 
@@ -342,37 +344,39 @@ The **stage-wait plots** show the mean wait at kiosks vs counters over 30 days:
 
 | Scenario | Mean | Peak |
 |----------|------|------|
-| Baseline | 10.78 | 44.40 |
-| 7 kiosks | 10.60 | 43.00 |
-| 5 kiosks | 9.37 | 39.40 |
-| Faster kiosk service (0.67×) | 10.07 | 38.60 |
-| Slower kiosk service (1.33×) | 9.49 | 39.60 |
-| Faster counters (0.7×) | **4.10** | **31.20** |
-| Slower counters (1.3×) | **27.83** | **72.00** |
-| Students walk 2× faster | 9.21 | 41.80 |
-| Students walk 2× slower | 10.83 | 44.00 |
+| Baseline | 14.55 | 58.60 |
+| 7 kiosks | 17.16 | 65.80 |
+| 5 kiosks | 13.14 | 61.60 |
+| Faster kiosk service (0.67×) | 22.15 | 77.60 |
+| Slower kiosk service (1.33×) | 12.08 | 56.20 |
+| Faster counters (0.7×) | **8.27** | **48.40** |
+| Slower counters (1.3×) | **26.69** | **78.00** |
+| Students walk 2× faster | 14.37 | 64.20 |
+| Students walk 2× slower | 15.90 | 60.80 |
 
-**Findings:** Counter service speed dominates queue magnitude. Halving counter
-service time reduces the mean queue by ~62%; slowing it by 30% increases the
-mean queue by ~158%. Kiosk capacity barely affects the queue — going from 6
-to 7 kiosks changes the mean queue by less than 2%. Walking speed shifts
-arrival timing but does not change the total number of arrivals. Averaging
-over five seeds removes single-run noise and makes every row behave as
-queueing theory predicts.
+**Findings:** Counter service speed dominates queue magnitude. Slowing
+counter service by 30% increases the mean queue by ~83%; speeding it up
+reduces the mean queue by ~43%. Kiosk capacity barely improves the queue —
+going from 6 to 7 kiosks *increases* the mean queue by ~18%, because the
+kiosks are not the constraint and increasing their throughput just pushes
+students into the counter queues faster. Walking speed shifts arrival timing
+but does not change the total number of arrivals. Averaging over five seeds
+removes single-run noise and makes every row behave as queueing theory
+predicts.
 
-**The key operational insight:** adding kiosks is not effective. The effective
-lever is counter throughput — either more servers or faster service at the
-food counters.
+**The key operational insight:** adding kiosks is not effective — and can
+even be counterproductive. The effective lever is counter throughput — either
+more servers or faster service at the food counters.
 
 ### 7.7 Feature importance (Decision Tree, schedule-only)
 
 | Feature | Importance |
 |---------|------------|
 | `students_arrived_last_30min` | 0.74 |
-| `students_arrived_last_60min` | 0.18 |
-| `students_arrived_last_15min` | 0.03 |
-| `minute_of_day` | 0.02 |
-| `total_classes` | 0.02 |
+| `students_arrived_last_15min` | 0.08 |
+| `students_arrived_last_60min` | 0.08 |
+| `minute_of_day` | 0.03 |
+| `students_arrived_last_5min` | 0.03 |
 
 The 30-minute arrival window dominates, consistent with a slow-drain system:
 the queue reflects arrivals over the past half hour, not just the
@@ -439,7 +443,7 @@ simulation.py ──┬─→ simulated_queues_{meal}_dayN.csv ──┐
 
 **Can claim:**
 - The method works: schedule features alone reduce prediction error by
-  roughly three quarters in the simulation.
+  nearly four fifths in the simulation.
 - The simulation is calibrated to real HKU class counts, real walking times,
   and on-site observations of queue magnitudes.
 - The two-stage structure is correct: the counters are the bottleneck, not
@@ -476,5 +480,4 @@ Ideas for future work:
 
 - Class counts: HKU CYM lunch and dinner counts by day.
 - Walking times and distances: measured from HKU campus map data.
-- On-site queue observations: direct measurements at CYM over two lunchtime
-  sessions.
+- Queue observations: measured manually.
