@@ -2,6 +2,7 @@
 Query the simulated queue at a specific (day, time).
 """
 import pandas as pd
+import matplotlib.pyplot as plt
 
 from src.config import FEATURES_FILE
 
@@ -52,13 +53,56 @@ def query(df, day, time_str):
 
 
 # ──────────────────────────────────────────────────────────────────
+# Show per-counter graph for a single day (lunch + dinner)
+# ──────────────────────────────────────────────────────────────────
+def show_day_graph(df, day):
+    """Display per-counter queue length over time for a single day."""
+    day_df = df[df["day_index"] == day]
+    if day_df.empty:
+        print(f"\nNo data for day={day}")
+        return
+
+    weekday = day_df["weekday"].iloc[0]
+    counter_cols = [c for c in df.columns
+                    if c.startswith("counter_") and c.endswith("_queue")]
+
+    fig, axes = plt.subplots(2, 1, figsize=(13, 8))
+    for ax, meal in zip(axes, ["lunch", "dinner"]):
+        d = day_df[day_df["meal"] == meal].copy()
+        if d.empty:
+            ax.set_title(f"{meal.capitalize()} — no data")
+            continue
+
+        hours = d["timestamp"].dt.hour + d["timestamp"].dt.minute / 60
+
+        if "kiosk_queue" in d.columns:
+            ax.plot(hours, d["kiosk_queue"], label="Kiosk (Stage 1)",
+                    linewidth=2.5, color="black")
+
+        for col in counter_cols:
+            name = col.replace("counter_", "").replace("_queue", "").replace("_", " ")
+            ax.plot(hours, d[col], label=name, alpha=0.8)
+
+        ax.set_xlabel("Hour of day")
+        ax.set_ylabel("Queue length")
+        ax.set_title(f"Per-counter queue length (Day {day} — {weekday}, {meal})")
+        ax.legend(fontsize=9, ncol=2)
+        ax.grid(alpha=0.3)
+
+    fig.tight_layout()
+    plt.show()
+
+
+# ──────────────────────────────────────────────────────────────────
 # Input prompts
 # ──────────────────────────────────────────────────────────────────
-def prompt_int(prompt, lo, hi):
+def prompt_int(prompt, lo, hi, allow_graph=False):
     while True:
         raw = input(prompt).strip()
         if raw.lower() == "q":
             raise QuitQuery
+        if allow_graph and raw.lower() in ("g", "graph"):
+            return "graph"
         try:
             val = int(raw)
         except ValueError:
@@ -108,22 +152,32 @@ def prompt_time():
 def main():
     print("=== CYM Queue Query ===")
     print("Type 'q' at any prompt to quit.\n")
+    print("Type 'g' at the Day prompt to view a per-counter graph.\n")
 
     df = pd.read_csv(FEATURES_FILE)
     df["timestamp"] = pd.to_datetime(df["timestamp"])
 
     query_count = 0
+    action_count = 0
 
     while True:
         try:
-            if query_count > 0:
+            if action_count > 0:
                 print()  # blank line between queries
 
-            day      = prompt_int("Day (0-29): ", 0, 29)
+            day = prompt_int("Day (0-29): ", 0, 29, allow_graph=True)
+
+            if day == "graph":
+                graph_day = prompt_int("Graph day (0-29): ", 0, 29)
+                show_day_graph(df, graph_day)
+                action_count += 1
+                continue
+
             time_str = prompt_time()
 
             query(df, day, time_str)
             query_count += 1
+            action_count += 1
 
         except QuitQuery:
             print(f"\nBye. You ran {query_count} "
