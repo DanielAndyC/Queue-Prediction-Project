@@ -183,25 +183,25 @@ Prompt:
 
 ```
 Day (0-29): 0
-Time (HH.MM): 1313
+Time (HH.MM): 1256
 ```
 
 Output:
 
 ```
-Day 0 (Monday, lunch) at 13:13
+Day 0 (Monday, lunch) at 12:56
 ---------------------------------------------
-  Kiosk (Stage 1)              4
-  Supreme BBQ                 21
-  China Kitchen                1
-  Noodle Spot                  3
-  Gourmet Kitchen             15
+  Kiosk (Stage 1)              5
+  Supreme BBQ                  1
+  China Kitchen                0
+  Noodle Spot                  0
+  Gourmet Kitchen              7
 ---------------------------------------------
-  TOTAL                       44
+  TOTAL                       13
 ```
 
 Accepted time formats: `13:13`, `13.13`, `1313`. Meal is inferred from the
-hour (lunch 10:30–14:59, dinner 16:30–20:59). Type `q` at any prompt to quit.
+hour (lunch 10:30–14:59, dinner 16:30–20:59). Type `q` at any prompt to quit. Type `g` for graphs.
 
 ---
 
@@ -232,17 +232,6 @@ hour (lunch 10:30–14:59, dinner 16:30–20:59). Type `q` at any prompt to quit
   | James Hsioung Lee | 4 min | 240 m |
   | CYM Chem | 9 min | 500 m |
   | Rayson Huang Theatre | 12 min | 750 m |
-
-- **On-site observations used for calibration** (two lunchtime sessions):
-
-  | Time | Observation |
-  |------|-------------|
-  | 12:16 | Noodle Spot: 4 in queue; ~4-min wait |
-  | 12:52 | Kiosks: 2–3 each (≈17 total) |
-  | 13:08 | Gourmet Kitchen: 30; China Kitchen: 2 |
-  | 13:13 | Supreme BBQ: 25; China Kitchen: 3; Kiosks: 17 |
-  | 13:18 | Supreme BBQ: 17 |
-  | 13:19 | Noodle Spot: 5; China Kitchen: 1 |
 
 ### 6.2 Assumptions
 
