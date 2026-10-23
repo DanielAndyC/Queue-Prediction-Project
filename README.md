@@ -95,6 +95,7 @@ Queue Prediction Project/
 ├── main.py                                # runs the full pipeline
 ├── query_queue.py                         # interactive queue lookup
 ├── README.md                              # this file
+├── requirements.txt                       # requirements/dependency
 └── .venv/                                 # virtual environment (not committed)
 ```
 
@@ -124,6 +125,10 @@ activate the virtual environment before running any project commands.
 
 ```bash
 pip install pandas numpy scipy simpy scikit-learn matplotlib seaborn
+```
+or
+```bash
+pip install -r requirements.txt
 ```
 
 Each library has a specific role:
