@@ -50,10 +50,10 @@ COUNTER_WEIGHTS_DINNER = {
 
 # Food-serving time per counter (minutes).
 COUNTER_SERVICE_MEAN = {
-    "Supreme_BBQ":     3.0,
-    "China_Kitchen":   1.5,
-    "Noodle_Spot":     2.0,
-    "Gourmet_Kitchen": 1.5,
+    "Supreme_BBQ":     2.5,
+    "China_Kitchen":   2.5,
+    "Noodle_Spot":     1.5,
+    "Gourmet_Kitchen": 2.0,
 }
 COUNTER_SERVICE_STD = 0.8
 
