@@ -290,32 +290,32 @@ using the current class counts and calibrated parameters.
 
 | Metric | Value |
 |--------|-------|
-| Mean queue (all) | 13.6 |
-| Lunch mean | 17.7 |
-| Dinner mean | 9.5 |
-| Peak queue | 139 (day 12, Wednesday lunch, at 13:04) |
-| Students served per meal | 240–430 |
-| Cross-correlation peak | +10 minutes |
+| Mean queue (all) | 9.45 |
+| Lunch mean | 11.23 |
+| Dinner mean | 7.67 |
+| Peak queue | 109 (day 26, Tuesday lunch, at 11:58) |
+| Students served per meal | 240–490 |
+| Cross-correlation peak | +8 minutes |
 
 ### 7.2 Model performance (Decision Tree, depth 7)
 
 | Experiment | MAE | Baseline MAE | Error reduction |
 |------------|-----|--------------|-----------------|
-| A: Schedule-only, predict current queue | 3.65 | 16.96 | ~78.5% |
-| B: Predict queue 10 minutes ahead | 4.80 | 17.27 | ~72.2% |
-| C: Predict change in queue length | 0.76 | 1.12 | ~32.3% |
-| D: All features (including lag) | 0.85 | 16.96 | ~95.0% |
+| A: Schedule-only, predict current queue | 1.90 | 13.74 | ~86.2% |
+| B: Predict queue 10 minutes ahead | 3.45 | 14.09 | ~75.5% |
+| C: Predict change in queue length | 0.71 | 1.06 | ~33.5% |
+| D: All features (including lag) | 0.67 | 13.74 | ~95.1% |
 
 **Experiment A is the key result.** With no queue history at all, schedule and
 location features alone reduce prediction error by nearly four fifths. This is
 direct evidence that the location-and-time approach works.
 
 **Experiment B is slightly weaker.** Forecasting 10 minutes ahead gives a
-higher MAE (4.80) than predicting the current minute (3.65). The future queue
+higher MAE (3.45) than predicting the current minute (1.90). The future queue
 depends on arrivals that have not happened yet, which makes the task harder.
 
 **Experiment C is positive but modest.** One-minute queue changes are
-dominated by stochastic noise. The depth-7 tree reduces error by 32.3%
+dominated by stochastic noise. The depth-7 tree reduces error by 33.5%
 relative to the mean baseline, showing that even rapid fluctuations carry some
 predictable structure.
 
@@ -329,7 +329,7 @@ isolate the schedule's contribution and show it is substantial.
 
 ### 7.4 Cross-correlation
 
-Strongest positive correlation at lag **+10 minutes** (r = 0.709). The queue
+Strongest positive correlation at lag **+8 minutes** (r = 0.706). The queue
 length responds to arrival bursts over the following 5–15 minutes, consistent
 with the physical lag between class end, walking time, kiosk service, and
 counter accumulation. The arrival spread (SD 5 minutes) concentrates the
@@ -340,8 +340,8 @@ walking-time expectation.
 
 The **stage-wait plots** show the mean wait at kiosks vs counters over 30 days:
 
-- Kiosk wait (Stage 1): **2–7 minutes** on most days
-- Counter wait (Stage 2): **3–14 minutes** on most days
+- Kiosk wait (Stage 1): **1–3 minutes** on most days
+- Counter wait (Stage 2): **3–8 minutes** on most days
 
 **The counters are the bottleneck — not the kiosks.**
 
@@ -349,20 +349,20 @@ The **stage-wait plots** show the mean wait at kiosks vs counters over 30 days:
 
 | Scenario | Mean | Peak |
 |----------|------|------|
-| Baseline | 14.55 | 58.60 |
-| 7 kiosks | 17.16 | 65.80 |
-| 5 kiosks | 13.14 | 61.60 |
-| Faster kiosk service (0.67×) | 22.15 | 77.60 |
-| Slower kiosk service (1.33×) | 12.08 | 56.20 |
-| Faster counters (0.7×) | **8.27** | **48.40** |
-| Slower counters (1.3×) | **26.69** | **78.00** |
-| Students walk 2× faster | 14.37 | 64.20 |
-| Students walk 2× slower | 15.90 | 60.80 |
+| Baseline | 9.49 | 61.00 |
+| 7 kiosks | 10.50 | 68.80 |
+| 5 kiosks | 8.55 | 55.00 |
+| Faster kiosk service (0.67×) | 10.71 | 72.60 |
+| Slower kiosk service (1.33×) | 8.27 | 52.20 |
+| Faster counters (0.7×) | **4.70** | **45.00** |
+| Slower counters (1.3×) | **16.02** | **76.40** |
+| Students walk 2× faster | 10.10 | 65.60 |
+| Students walk 2× slower | 8.59 | 58.80 |
 
 **Findings:** Counter service speed dominates queue magnitude. Slowing
-counter service by 30% increases the mean queue by ~83%; speeding it up
-reduces the mean queue by ~43%. Kiosk capacity barely improves the queue —
-going from 6 to 7 kiosks *increases* the mean queue by ~18%, because the
+counter service by 30% increases the mean queue by ~69%; speeding it up
+reduces the mean queue by ~50%. Kiosk capacity barely improves the queue —
+going from 6 to 7 kiosks *increases* the mean queue by ~11%, because the
 kiosks are not the constraint and increasing their throughput just pushes
 students into the counter queues faster. Walking speed shifts arrival timing
 but does not change the total number of arrivals. Averaging over five seeds
@@ -377,14 +377,14 @@ more servers or faster service at the food counters.
 
 | Feature | Importance |
 |---------|------------|
-| `students_arrived_last_30min` | 0.74 |
-| `students_arrived_last_15min` | 0.08 |
-| `students_arrived_last_60min` | 0.08 |
-| `minute_of_day` | 0.03 |
-| `students_arrived_last_5min` | 0.03 |
+| `students_arrived_last_15min` | 0.695 |
+| `students_arrived_last_30min` | 0.237 |
+| `students_arrived_last_10min` | 0.027 |
+| `students_arrived_last_60min` | 0.024 |
+| `students_arrived_last_5min` | 0.012 |
 
-The 30-minute arrival window dominates, consistent with a slow-drain system:
-the queue reflects arrivals over the past half hour, not just the
+The 15-minute arrival window dominates, consistent with a fast-drain system:
+the queue reflects arrivals over the recent past, not just the
 instantaneous arrival rate.
 
 ---
