@@ -22,7 +22,7 @@ QUEUE_RECORD_INTERVAL = 1     # minutes
 
 # ── Stage 1: kiosks (order + pay) ---------──────────────────────
 NUM_KIOSKS = 6
-KIOSK_SERVICE_MEAN = 1.2      # minutes
+KIOSK_SERVICE_MEAN = 0.7      # minutes
 KIOSK_SERVICE_STD  = 0.5
 
 # ── Stage 2: food counters ──────────────────────────────────────
@@ -36,10 +36,10 @@ COUNTER_CAPACITY = 3          # parallel servers per counter
 
 # Popularity weights (must sum to 1.0).
 COUNTER_WEIGHTS_LUNCH = {
-    "Supreme_BBQ":     0.40,
-    "China_Kitchen":   0.10,
-    "Noodle_Spot":     0.20,
-    "Gourmet_Kitchen": 0.30,
+    "Supreme_BBQ":     0.25,
+    "China_Kitchen":   0.25,
+    "Noodle_Spot":     0.15,
+    "Gourmet_Kitchen": 0.35,
 }
 COUNTER_WEIGHTS_DINNER = {
     "Supreme_BBQ":     0.15,
@@ -50,10 +50,10 @@ COUNTER_WEIGHTS_DINNER = {
 
 # Food-serving time per counter (minutes).
 COUNTER_SERVICE_MEAN = {
-    "Supreme_BBQ":     3.0,
-    "China_Kitchen":   1.5,
-    "Noodle_Spot":     2.0,
-    "Gourmet_Kitchen": 3.5,
+    "Supreme_BBQ":     2.5,
+    "China_Kitchen":   2.5,
+    "Noodle_Spot":     1.5,
+    "Gourmet_Kitchen": 2.0,
 }
 COUNTER_SERVICE_STD = 0.8
 
