@@ -426,8 +426,7 @@ simulation.py ──┬─→ simulated_queues_{meal}_dayN.csv ──┐
 ### 10.1 Limitations
 
 - Queue data is **simulated**, not observed from the real canteen. The model is
-  calibrated against a small number of on-site observations (two lunchtime
-  sessions).
+  calibrated against a small number of on-site observations.
 - Class sizes are sampled from an assumed distribution, not from enrolment records.
 - Building assignment is read directly from the CSV, not derived from actual timetables.
 - Walking times are fixed per building; real walking times vary by individual.
