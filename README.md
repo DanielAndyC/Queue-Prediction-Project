@@ -265,8 +265,7 @@ Because some data is not publicly available, the project assumes:
   Noodle Spot 15%, China Kitchen 25%.
 - **Counter popularity (dinner):** Gourmet Kitchen 35%, China Kitchen 30%,
   Noodle Spot 20%, Supreme BBQ 15%. This reflects corrected on-site
-  observations — the earlier assumption that Supreme BBQ dominated dinner
-  was reversed after further observation.
+  observations
 - **Random seed:** All randomness is controlled by `BASE_SEED` in `config.py`.
   Changing it will produce different queue data, different feature values,
   and slightly different MAE results. The default is 42.
