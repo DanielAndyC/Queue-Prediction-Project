@@ -259,10 +259,10 @@ Because some data is not publicly available, the project assumes:
   `class_end + walking_time`, with Gaussian noise (SD 5 minutes) representing
   students who leave class at different times.
 - **Service times:** Gaussian, with means set to observed values. Kiosk mean
-  1.2 min; China Kitchen 1.5 min; Noodle Spot 2.0 min; Supreme BBQ 3.0 min;
-  Gourmet Kitchen 3.5 min.
-- **Counter popularity (lunch):** Supreme BBQ 40%, Gourmet Kitchen 30%,
-  Noodle Spot 20%, China Kitchen 10%.
+  0.7 min; China Kitchen 2.5 min; Noodle Spot 1.5 min; Supreme BBQ 2.5 min;
+  Gourmet Kitchen 2.0 min.
+- **Counter popularity (lunch):** Supreme BBQ 25%, Gourmet Kitchen 35%,
+  Noodle Spot 15%, China Kitchen 25%.
 - **Counter popularity (dinner):** Gourmet Kitchen 35%, China Kitchen 30%,
   Noodle Spot 20%, Supreme BBQ 15%. This reflects corrected on-site
   observations — the earlier assumption that Supreme BBQ dominated dinner
